@@ -7,7 +7,7 @@
     $header_color = get_field('header_color');
 ?>
 
-<header class="header position-fixed top-0 w-100 <?php echo $header_color == 'dark-logo' ? 'bg-30264B-header' : '' ?>">
+<!-- <header class="header position-fixed top-0 w-100 <?php echo $header_color == 'dark-logo' ? 'bg-30264B-header' : '' ?>">
     <div class="header-contact bg-BFA8E5 py-2">
       <div class="container">
         <div class="d-flex justify-content-between">
@@ -110,4 +110,4 @@
         </div>
       </div>
     </div>
-  </header>
+</header> -->

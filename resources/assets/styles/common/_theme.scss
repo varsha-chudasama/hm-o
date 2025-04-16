@@ -4,15 +4,15 @@
   padding-right: 33px;
 
   @include media-breakpoint-down(lg) {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
 .row {
   margin-inline: 0px;
 
-  & > * {
+  &>* {
     padding-inline: 0px;
   }
 }
@@ -20,7 +20,7 @@
 .row12 {
   margin-inline: -12px;
 
-  & > * {
+  &>* {
     padding-inline: 12px;
   }
 }
@@ -28,7 +28,7 @@
 .row15 {
   margin-inline: -15px;
 
-  & > * {
+  &>* {
     padding-inline: 15px;
   }
 }

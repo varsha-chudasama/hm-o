@@ -16,16 +16,16 @@
             $hero_vimeo = get_sub_field('hero_vimeo');
             $hero_youtube = get_sub_field('hero_youtube');
         ?>
-            <section class="hero-section dpt-215">
+            <section class="hero-section dpt-215 tpt-165">
                 <div class="container">
                     <div class="hero-content col-8 mx-auto dmb-60 text-center">
                         <?php if (!empty($hero_title)): ?>
-                            <div class="rale-medium font61 leading70 text-capitalize text-F7F5F6 wow animated animate__fadeInUp" data-wow-duration="1.5s">
+                            <div class="rale-medium font61 leading70 text-capitalize text-F7F5F6 wow animated animate__fadeInUp res-font24 res-leading28" data-wow-duration="1.5s">
                                 <?php echo $hero_title; ?>
                             </div>
                         <?php endif; ?>
                         <?php if (!empty($content)): ?>
-                            <div class="basker font72 leading70 text-capitalize text-F7F5F6 dmb-30 wow animated animate__fadeInUp" data-wow-duration="1.5s">
+                            <div class="basker font72 leading70 text-capitalize text-F7F5F6 dmb-30 wow animated animate__fadeInUp res-font34 res-leading40" data-wow-duration="1.5s">
                                 <?php echo $content; ?>
                             </div>
                         <?php endif; ?>
