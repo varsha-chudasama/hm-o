@@ -609,27 +609,29 @@
                                 <div class="basker font52 leading55 text-30264B dmb-40 col-11"><?php echo $contact_us_title; ?></div>
                             <?php endif; ?>
                             <div class="d-flex dmb-55">
-                                <?php if(!empty($address_group)) : foreach($address_group as $address_group_data) :
+                                <?php if (!empty($address_group)) : foreach ($address_group as $address_group_data) :
                                         $location = $address_group_data['location'];
                                         $address = $address_group_data['address'];
                                         $phone_no = $address_group_data['phone_no'];
                                 ?>
-                                <div class="col-6">
-                                    <div class="rale-medium font20 leading26 text-30264B dmb-20"><?php echo $location; ?></div>
-                                    <div class="rale-medium font16 leading26 text-201E4A dmb-20 col-4 pe-2"><?php echo $address; ?></div>
-                                    <div class="rale-medium font16 leading26 text-201E4A"><?php echo $phone_no; ?></div>
-                                </div>
-                                <?php endforeach; endif; ?>
+                                        <div class="col-6">
+                                            <div class="rale-medium font20 leading26 text-30264B dmb-20"><?php echo $location; ?></div>
+                                            <div class="rale-medium font16 leading26 text-201E4A dmb-20 col-4 pe-2"><?php echo $address; ?></div>
+                                            <div class="rale-medium font16 leading26 text-201E4A"><?php echo $phone_no; ?></div>
+                                        </div>
+                                <?php endforeach;
+                                endif; ?>
                             </div>
                             <div class="d-flex social-icon-hroup">
-                                <?php if(!empty($social_links)) : foreach($social_links as $social_links_data) :
+                                <?php if (!empty($social_links)) : foreach ($social_links as $social_links_data) :
                                         $image = $social_links_data['image'];
                                         $link = $social_links_data['link'];
                                 ?>
-                                <a href="<?php echo $link; ?>"  target="_blank"
-                                    class="social-icon d-inline-flex justify-content-center align-items-center rounded-circle"><img
-                                        src="<?php echo $image['sizes']['medium']; ?>" class="img" alt=""></a>
-                                <?php endforeach; endif; ?>
+                                        <a href="<?php echo $link; ?>" target="_blank"
+                                            class="social-icon d-inline-flex justify-content-center align-items-center rounded-circle"><img
+                                                src="<?php echo $image['sizes']['medium']; ?>" class="img" alt=""></a>
+                                <?php endforeach;
+                                endif; ?>
                             </div>
                         </div>
                         <div class="col-7 contact-form  wow animated animate__fadeInUp" data-wow-duration="1.5s">
@@ -651,9 +653,9 @@
                     <?php if (!empty($page_cards)): ?>
                         <div class="row row15">
                             <?php foreach ($page_cards as $page_cards_data) :
-                               $images = $page_cards_data['page_image'];
-                               $title = $page_cards_data['title'];
-                               $link = $page_cards_data['link'];
+                                $images = $page_cards_data['page_image'];
+                                $title = $page_cards_data['title'];
+                                $link = $page_cards_data['link'];
                             ?>
                                 <div class="col-4 wow animated animate__fadeInUp" data-wow-duration="1.5s">
                                     <div class="d-inline-block w-100 related-cards">
@@ -671,7 +673,7 @@
                 </div>
             </section>
 
-        
+
 
         <?php endif; ?>
 
@@ -680,39 +682,39 @@
             $payment_card = get_sub_field('payment_card');
         ?>
 
-        <section class="payment-card-section bg-B6EDC6 dpt-220 dpb-210">
-            <div class="container">
-                <?php if(!empty($title)) :?>
-                    <div class="basker font100 leading115 text-0E3823 dmb-40 wow animated animate__fadeInUp" data-wow-duration="1.5s"><?php echo $title; ?></div>
-                <?php endif; ?>
-                <div class="row row15">
-                    <?php foreach ($payment_card as $payment_card_data) :
-                        $left_title = $payment_card_data['left_title'];
-                        $content = $payment_card_data['content'];
-                        $button = $payment_card_data['button'];
-                    ?>
-                        <div class="col-6 wow animated animate__fadeInUp" data-wow-duration="1.5s">
-                            <div class="d-flex bg-0E3823 radius15 dpt-60 dpb-60 px-5">
-                                <div class="col-6">
-                                    <?php if(!empty($left_title)) :?>
-                                        <div class="basker font36 leading40 text-F7F5F6"><?php echo $left_title; ?></div>
-                                    <?php endif; ?>
-                                </div>
-                                <div class="col-6">
-                                <?php if(!empty($left_title)) :?>
-                                    <div class="rale-medium font14 leading20 text-F7F5F6 dmb-15"><?php echo $content; ?></div>
-                                <?php endif; ?>
-                                <?php if(!empty($button)) :?>
-                                    <a href="<?php echo $button['url']; ?>" target="<?php echo $button['target'] ?>"
-                                        class="btnA color-F7F5F6-btn text-decoration-none rale-semibold font14 leading18 d-inline-flex align-items-center rounded-pill"><?php echo $button['title']; ?></a>
-                                <?php endif; ?>
+            <section class="payment-card-section bg-B6EDC6 dpt-220 dpb-210">
+                <div class="container">
+                    <?php if (!empty($title)) : ?>
+                        <div class="basker font100 leading115 text-0E3823 dmb-40 wow animated animate__fadeInUp" data-wow-duration="1.5s"><?php echo $title; ?></div>
+                    <?php endif; ?>
+                    <div class="row row15">
+                        <?php foreach ($payment_card as $payment_card_data) :
+                            $left_title = $payment_card_data['left_title'];
+                            $content = $payment_card_data['content'];
+                            $button = $payment_card_data['button'];
+                        ?>
+                            <div class="col-6 wow animated animate__fadeInUp" data-wow-duration="1.5s">
+                                <div class="d-flex bg-0E3823 radius15 dpt-60 dpb-60 px-5">
+                                    <div class="col-6">
+                                        <?php if (!empty($left_title)) : ?>
+                                            <div class="basker font36 leading40 text-F7F5F6"><?php echo $left_title; ?></div>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="col-6">
+                                        <?php if (!empty($left_title)) : ?>
+                                            <div class="rale-medium font14 leading20 text-F7F5F6 dmb-15"><?php echo $content; ?></div>
+                                        <?php endif; ?>
+                                        <?php if (!empty($button)) : ?>
+                                            <a href="<?php echo $button['url']; ?>" target="<?php echo $button['target'] ?>"
+                                                class="btnA color-F7F5F6-btn text-decoration-none rale-semibold font14 leading18 d-inline-flex align-items-center rounded-pill"><?php echo $button['title']; ?></a>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <?php endif; ?>
 
@@ -720,21 +722,21 @@
             $title = get_sub_field('title');
         ?>
 
-        <section class="invoice-form-section bg-B6EDC6 dpt-220 dpb-90">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="left-side-content d-flex flex-column justify-content-between position-sticky">
-                            <div class="basker font100 leading115 text-0E3823"><?php echo $title; ?></div>
-                            <a href="/make-a-payment/" class="rale-medium font16 leading20 text-0E3823 d-inline-block">Go back</a>
+            <section class="invoice-form-section bg-B6EDC6 dpt-220 dpb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="left-side-content d-flex flex-column justify-content-between position-sticky">
+                                <div class="basker font100 leading115 text-0E3823"><?php echo $title; ?></div>
+                                <a href="/make-a-payment/" class="rale-medium font16 leading20 text-0E3823 d-inline-block">Go back</a>
+                            </div>
+                        </div>
+                        <div class="col-6 invoice-form">
+                            <?php echo do_shortcode('[contact-form-7 id="07898cf" title="Untitled"]'); ?>
                         </div>
                     </div>
-                    <div class="col-6 invoice-form">
-                        <?php echo do_shortcode('[contact-form-7 id="07898cf" title="Untitled"]'); ?>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <?php endif; ?>
 
@@ -743,57 +745,57 @@
             $privacy_policy_content = get_sub_field('privacy_policy_content');
         ?>
 
-        <section class="privacy-section bg-30264B dpt-175 dpb-105">
-            <div class="container">
-                <div class="basker font100 leading115 text-capitalize text-BFA8E5 dmb-55"><?php echo $privacy_policy_title; ?></div>
-                <div class="row flex-column flex-lg-row">
-                    <div class="col-lg-3 col-12 privacy-left-content">
-                        <div class="position-sticky privacy-links">
-                            <ul class="list-none ps-0 dmb-30" id="privacy-links">
-                            <?php foreach ($privacy_policy_content as $key => $privacy_policy_content_data) :
-                                $title = $privacy_policy_content_data['title'];
-                            ?>
-                                <li class="dmb-10 col-8"><a
-                                        class="rale-medium font14 leading26 text-F7F5F6 transition text-decoration-none d-inline-block"
-                                        href="#key<?php echo $key + 1; ?>"><?php echo $title; ?></a></li>
-                            <?php endforeach; ?>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-12 privacy-right-content mx-auto">
-                        <?php foreach ($privacy_policy_content as $key => $privacy_policy_content_data) :
-                            $title = $privacy_policy_content_data['title'];
-                            $content = $privacy_policy_content_data['content'];
-                            $button = $privacy_policy_content_data['button'];
-                        ?>
-                        <div class="single-content dpt-75 tpt-55 pe-5" id="key<?php echo $key + 1; ?>">
-                            <div class="col-lg-11 col-12 single-content-line dpb-75">
-                                <?php if(!empty($title)) :?>
-                                    <div class="basker font36 leading55 text-F7F5F6 dmb-40">
-                                        <?php echo $title; ?>
-                                    </div>
-                                <?php endif; ?>
-                                <?php if(!empty($content)) :?>
-                                <div class="rale-normal font16 leading26 text-F7F5F6 pe-5 privacy-content dmb-30">
-                                    <?php echo $content; ?>
-                                </div>
-                                <?php endif; ?>
-                                <?php if(!empty($button)) :?>
-                                    <a href="<?php echo $button['url']; ?>"
-                                        class="btnA color-F7F5F6-btn text-decoration-none rale-semibold font14 leading18 d-inline-flex align-items-center rounded-pill">
-                                        <?php echo $button['title']; ?>
-                                    </a>
-                                <?php endif; ?>
+            <section class="privacy-section bg-30264B dpt-175 dpb-105 tpt-120">
+                <div class="container">
+                    <div class="basker font100 leading115 res-font38 res-leading40  text-capitalize text-BFA8E5 dmb-55"><?php echo $privacy_policy_title; ?></div>
+                    <div class="row flex-column flex-lg-row">
+                        <div class="col-lg-3 col-12 privacy-left-content">
+                            <div class="position-sticky privacy-links">
+                                <ul class="list-none d-lg-block d-flex justify-content-center overflow-auto text-nowrap ps-0 dmb-30" id="privacy-links">
+                                    <?php foreach ($privacy_policy_content as $key => $privacy_policy_content_data) :
+                                        $title = $privacy_policy_content_data['title'];
+                                    ?>
+                                        <li class="dmb-10 col-8"><a
+                                                class="rale-medium font14 leading26 text-F7F5F6 transition text-decoration-none d-inline-block"
+                                                href="#key<?php echo $key + 1; ?>"><?php echo $title; ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
                             </div>
                         </div>
-                        <?php endforeach; ?>
+                        <div class="col-lg-9 col-12 privacy-right-content mx-auto">
+                            <?php foreach ($privacy_policy_content as $key => $privacy_policy_content_data) :
+                                $title = $privacy_policy_content_data['title'];
+                                $content = $privacy_policy_content_data['content'];
+                                $button = $privacy_policy_content_data['button'];
+                            ?>
+                                <div class="single-content dpt-75 tpt-55 pe-5" id="key<?php echo $key + 1; ?>">
+                                    <div class="col-lg-11 col-12 single-content-line dpb-75">
+                                        <?php if (!empty($title)) : ?>
+                                            <div class="basker font36 leading55 text-F7F5F6 dmb-40">
+                                                <?php echo $title; ?>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if (!empty($content)) : ?>
+                                            <div class="rale-normal font16 leading26 text-F7F5F6 pe-5 privacy-content dmb-30">
+                                                <?php echo $content; ?>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if (!empty($button)) : ?>
+                                            <a href="<?php echo $button['url']; ?>"
+                                                class="btnA color-F7F5F6-btn text-decoration-none rale-semibold font14 leading18 d-inline-flex align-items-center rounded-pill">
+                                                <?php echo $button['title']; ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <?php endif; ?>
-        
+
 
         <?php if (get_row_layout() == "spacing"):
             $desktop = get_sub_field("desktop");
