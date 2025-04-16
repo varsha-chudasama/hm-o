@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/wp-content/themes/HM&O/assets/fonts/raleway-regular.ttf") format(truetype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("/wp-content/themes/HM&O/assets/fonts/raleway-medium.ttf") format(truetype);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("/wp-content/themes/HM&O/assets/fonts/raleway-semiBold.ttf") format(truetype);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Baskervville-Regular";
+  src: url("/wp-content/themes/HM&O/assets/fonts/baskervville-regular.ttf") format(truetype);
+  font-weight: 600;
+}
+
+.rale-normal {
+  font-family: "Raleway-Regular", sans-serif;
+}
+.rale-medium {
+  font-family: "Raleway-Medium", sans-serif;
+}
+.rale-semibold {
+  font-family: "Raleway-SemiBold", sans-serif;
+}
+.basker {
+  font-family: "Baskervville-Regular", sans-serif;
+}

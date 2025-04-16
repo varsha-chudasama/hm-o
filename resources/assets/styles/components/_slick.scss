@@ -1,0 +1,25 @@
+.our-values-section {
+
+    .slick-arrow {
+
+        .prev-arrow,
+        .next-arrow {
+            height: 52px;
+            width: 52px;
+
+            img {
+                height: 14px;
+            }
+        }
+    }
+}
+
+.our-values-slider {
+    .slick-list {
+        margin-inline: -12px;
+
+        .slick-slide {
+            padding-inline: 12px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+*.log
+dist
+bower_components
+node_modules
+npm-debug.log
+temp
+videos
+video
+.DS_STORE
+compiled

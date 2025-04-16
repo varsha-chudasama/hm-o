@@ -1,0 +1,103 @@
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.btnA {
+  height: 43px;
+  padding-inline: 28px;
+  transition: all 0.3s ease-in-out;
+
+  &.color-F7F5F6-btn {
+    border: 1px solid $color-F7F5F6;
+    background-color: transparent;
+    color: $color-F7F5F6;
+
+    &:hover {
+      border: 1px solid $color-F7F5F6;
+      background-color: $color-F7F5F6;
+      color: $color-30264B;
+    }
+  }
+  &.color-30264B-btn {
+    border: 1px solid $color-30264B;
+    background-color: transparent;
+    color: $color-30264B;
+
+    &:hover {
+      border: 1px solid $color-30264B;
+      background-color: $color-30264B;
+      color: $color-BFA8E5;
+    }
+  }
+  &.color-B6EDC6-btn {
+    border: 1px solid $color-B6EDC6;
+    background-color: transparent;
+    color: $color-B6EDC6;
+
+    &:hover {
+      border: 1px solid $color-B6EDC6;
+      background-color: $color-B6EDC6;
+      color: $color-0E3823;
+    }
+  }
+  &.color-BFA8E5-btn {
+    border: 1px solid $color-BFA8E5;
+    background-color: transparent;
+    color: $color-BFA8E5;
+
+    &:hover {
+      border: 1px solid $color-BFA8E5;
+      background-color: $color-BFA8E5;
+      color: $color-30264B;
+    }
+  }
+  &.color-0E3823-btn {
+    border: 1px solid $color-0E3823;
+    background-color: transparent;
+    color: $color-0E3823;
+
+    &:hover {
+      border: 1px solid $color-0E3823;
+      background-color: $color-0E3823;
+      color: $color-B6EDC6;
+    }
+  }
+  &.border-F7F5F6-BFA8E5-btn {
+    border: 1px solid $color-F7F5F6;
+    background-color: transparent;
+    color: $color-BFA8E5;
+
+    &:hover {
+      border: 1px solid $color-F7F5F6;
+      background-color: $color-F7F5F6;
+      color: $color-30264B;
+    }
+  }
+  &.bg-30264B-BFA8E5-btn {
+    border: 1px solid $color-30264B;
+    background-color: $color-30264B;
+    color: $color-BFA8E5;
+
+    &:hover {
+      border: 1px solid $color-30264B;
+      background-color: transparent;
+      color: $color-30264B;
+    }
+  }
+  &.bg-0E3823-B6EDC6-btn {
+    border: 1px solid $color-0E3823;
+    background-color: $color-0E3823;
+    color: $color-B6EDC6;
+
+    &:hover {
+      border: 1px solid $color-0E3823;
+      background-color: transparent;
+      color: $color-0E3823;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.offcanvas-body {
+    .input {
+        padding-inline: 33px;
+        height: 58px;
+        border: 1px solid $color-30264B;
+        border-radius: 29px;
+
+        &::placeholder {
+            font-size: $font16;
+            line-height: $leading26;
+            color: $color-30264B;
+        }
+
+        &.file-input {
+            border: 1px dashed $color-30264B;
+        }
+    }
+
+    .file-input-container {
+        .wpcf7-form-control-wrap {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+}
+
+
+.contact-form {
+    padding-inline: 29px;
+
+    .input-row>* {
+        padding: 0 8px !important;
+    }
+
+    .input-row {
+        margin: 0 -8px;
+
+        input {
+            height: 58px;
+            background-color: $white;
+            border-radius: 50px;
+            border: 1px solid $color-BFA8E5;
+            margin-bottom: 15px;
+            color: $color-30264B;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 9px !important;
+            }
+
+            &::placeholder {
+                color: $color-30264B;
+            }
+        }
+
+        textarea {
+            background-color: $white;
+            border-radius: 20px;
+            border: 1px solid $color-BFA8E5;
+            color: $color-30264B;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 9px !important;
+            }
+
+            &::placeholder {
+                color: $color-30264B;
+            }
+        }
+    }
+}
+
+.invoice-form {
+    .input {
+        height: 58px;
+        border-radius: 29px;
+
+        &::placeholder {
+            color: $color-0E3823;
+        }
+    }
+}
