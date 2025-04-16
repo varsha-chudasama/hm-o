@@ -18,9 +18,9 @@
         ?>
             <section class="hero-section dpt-215 tpt-165">
                 <div class="container">
-                    <div class="hero-content col-8 mx-auto dmb-60 text-center">
+                    <div class="hero-content col-lg-8 col-10 mx-auto dmb-60 text-center">
                         <?php if (!empty($hero_title)): ?>
-                            <div class="rale-medium font61 leading70 text-capitalize text-F7F5F6 wow animated animate__fadeInUp res-font24 res-leading28" data-wow-duration="1.5s">
+                            <div class="rale-medium font61 leading70 text-capitalize text-F7F5F6 wow animated animate__fadeInUp res-font24 res-leading28 tmb-5" data-wow-duration="1.5s">
                                 <?php echo $hero_title; ?>
                             </div>
                         <?php endif; ?>
@@ -62,9 +62,9 @@
         ?>
             <section class="left-content-section">
                 <div class="container">
-                    <div class="col-10">
+                    <div class="col-lg-10 col-12">
                         <?php if (!empty($content)): ?>
-                            <div class="basker font52 leading60 text-30264B dmb-20 wow animated animate__fadeInUp" data-wow-duration="1.5s"><?php echo $content; ?> </div>
+                            <div class="basker font52 leading60 text-30264B dmb-20 tmb-25 wow animated animate__fadeInUp res-font24 res-leading35" data-wow-duration="1.5s"><?php echo $content; ?> </div>
                         <?php endif; ?>
                         <?php if (!empty($button)): ?>
                             <a href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>" class="btnA color-30264B-btn text-decoration-none rale-semibold font14 leading18 d-inline-flex align-items-center rounded-pill wow animated animate__fadeInUp" data-wow-duration="1.5s"><?php echo $button['title']; ?></a>
@@ -85,11 +85,11 @@
                             foreach ($service_group as $services):
                                 $service_button = $services['button'];
                         ?>
-                                <div class="col-6  wow animated animate__fadeInUp" data-wow-duration="1.5s">
-                                    <div class="service-cards radius15 dpt-115 dpb-100 <?php echo $services['background_color'] == 'purple' ? 'bg-30264B-cards' : ''; ?>">
-                                        <div class="col-9 mx-auto text-center">
-                                            <?php if (!empty($services['title'])): ?> <div class="service-heading basker font46 leading50 dmb-20"><?php echo $services['title'] ?></div><?php endif; ?>
-                                            <?php if (!empty($services['content'])): ?><div class="service-description rale-normal font20 leading26 dmb-30 col-11 px-2 mx-auto"><?php echo $services['content'] ?></div><?php endif; ?>
+                                <div class="col-lg-6 col-12 wow animated animate__fadeInUp dmb-20 service-cards-col" data-wow-duration="1.5s">
+                                    <div class="service-cards radius15 dpt-115 dpb-100 tpt-50 tpb-50 <?php echo $services['background_color'] == 'purple' ? 'bg-30264B-cards' : ''; ?>">
+                                        <div class="col-lg-9 mx-auto text-center">
+                                            <?php if (!empty($services['title'])): ?> <div class="service-heading basker font46 leading50 dmb-20 res-font26 res-leading35 tmb-15"><?php echo $services['title'] ?></div><?php endif; ?>
+                                            <?php if (!empty($services['content'])): ?><div class="service-description rale-normal font20 leading26 dmb-30 col-11 px-lg-2 mx-auto res-font14 res-leading22"><?php echo $services['content'] ?></div><?php endif; ?>
                                             <?php if (!empty($service_button)): ?> <a href="<?php echo $service_button['url'] ?>" target="<?php echo $service_button['target'] ?>"
                                                     class="btnA text-decoration-none rale-semibold font14 leading18 d-inline-flex align-items-center rounded-pill"><?php echo $service_button['title'] ?></a>
                                             <?php endif; ?>
@@ -102,6 +102,7 @@
                 </div>
             </section>
         <?php endif; ?>
+
         <?php if (get_row_layout() == "left_right_content"):
             $image_postion = get_sub_field('image_postion');
             $image = get_sub_field('image');
@@ -113,22 +114,22 @@
             $font_size = get_sub_field('font_size');
         ?>
             <section class="left-right-section">
-                <div class="container">
+                <div class="container px-p-0">
                     <div class="row align-items-center">
                         <?php if ($image_postion == 'left'): ?>
-                            <div class="col-6 px-5">
-                                <div class="left-right-img radius15 overflow-hidden ms-2 wow animated animate__fadeInUp" data-wow-duration="1.5s">
+                            <div class="col-lg-6 col-12 px-lg-5">
+                                <div class="left-right-img radius15 res-radius-0  overflow-hidden ms-lg-2 wow animated animate__fadeInUp dmb-30" data-wow-duration="1.5s">
                                     <?php if (!empty($image)): ?>
                                         <img src="<?php echo $image['sizes']['medium']; ?>" class="w-100 h-100 object-cover" alt="">
                                     <?php endif; ?>
                                 </div>
                             </div>
                         <?php endif; ?>
-                        <div class="col-6">
-                            <div class="<?php echo $font_size == 'large' ? 'col-10 ' : 'col-9' ?> mx-auto wow animated animate__fadeInUp" data-wow-duration="1.5s">
-                                <?php if (!empty($title)): ?><div class="rale-normal <?php echo $font_size == 'large' ? 'font48' : 'font36' ?> leading50 text-30264B"><?php echo $title; ?></div><?php endif; ?>
-                                <?php if (!empty($sub_title)): ?><div class="basker <?php echo $font_size == 'large' ? 'font48' : 'font36' ?> leading50 text-30264B"><?php echo $sub_title; ?></div><?php endif; ?>
-                                <?php if (!empty($content)): ?> <div class="rale-normal dmt-30 <?php echo $font_size == 'large' ? 'font20 pe-5' : 'font16' ?>  leading26 text-30264B dmb-30"><?php echo $content;  ?></div> <?php endif; ?>
+                        <div class="col-lg-6 col-12 px-p-p">
+                            <div class="<?php echo $font_size == 'large' ? 'col-lg-10 ' : 'col-9' ?> mx-auto wow animated animate__fadeInUp" data-wow-duration="1.5s">
+                                <?php if (!empty($title)): ?><div class="rale-normal <?php echo $font_size == 'large' ? 'font42 res-font24' : 'font36' ?>  leading50 res-leading38 text-30264B"><?php echo $title; ?></div><?php endif; ?>
+                                <?php if (!empty($sub_title)): ?><div class="basker <?php echo $font_size == 'large' ? 'font48 res-font30' : 'font36' ?> leading50 res-leading38 text-30264B"><?php echo $sub_title; ?></div><?php endif; ?>
+                                <?php if (!empty($content)): ?> <div class="rale-normal dmt-30 <?php echo $font_size == 'large' ? 'font20 res-font14 pe-lg-5 pe-2' : 'font16' ?>  leading26 res-leading22 text-30264B dmb-30 tmb-25"><?php echo $content;  ?></div> <?php endif; ?>
                                 <?php if (!empty($button)): ?>
                                     <a href="<?php echo $button['url'] ?>" target="<?php echo $button['target'] ?>"
                                         class="btnA text-decoration-none rale-semibold font14 leading18 d-inline-flex align-items-center rounded-pill <?php echo $button_style == 'outline' ? 'color-30264B-btn' : 'bg-30264B-BFA8E5-btn' ?>"> <?php echo $button['title'] ?></a>
@@ -136,7 +137,7 @@
                             </div>
                         </div>
                         <?php if ($image_postion == 'right'): ?>
-                            <div class="col-6 px-5">
+                            <div class="col-lg-6 col-12 px-lg-5">
                                 <div class="left-right-img radius15 overflow-hidden ms-2">
                                     <?php if (!empty($image)): ?>
                                         <img src="<?php echo $image['sizes']['medium'] ?>" class="w-100 h-100 object-cover" alt="">
@@ -165,7 +166,7 @@
                             <div class="bg-F7F5F6 radius20 view-vacancies-box">
                                 <div class="d-flex">
                                     <div class="col-6">
-                                        <?php if (!empty($left_main_title)): ?> <div class="rale-normal font42 leading55 text-0E3823   wow animated animate__fadeInUp" data-wow-duration="1.5s"><?php echo $left_main_title; ?></div>
+                                        <?php if (!empty($left_main_title)): ?> <div class="rale-normal font42 leading55 text-0E3823 res-font24 wow animated animate__fadeInUp" data-wow-duration="1.5s"><?php echo $left_main_title; ?></div>
                                         <?php endif; ?>
                                         <?php if (!empty($left_sub_title)): ?>
                                             <div class="basker font48 leading55 text-0E3823   wow animated animate__fadeInUp" data-wow-duration="1.5s"><?php echo  $left_sub_title; ?></div>

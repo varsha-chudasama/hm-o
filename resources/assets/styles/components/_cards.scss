@@ -35,6 +35,11 @@
     height: 325px;
 }
 
+.service-cards-col {
+    &:last-child {
+        margin-bottom: 0px !important;
+    }
+}
 
 .service-cards {
     background-color: $color-0E3823;

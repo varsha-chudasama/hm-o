@@ -3,5 +3,9 @@
 
     .hero-img {
         height: 532px;
+
+        @include media-breakpoint-down(lg) {
+            height: 300px;
+        }
     }
 }

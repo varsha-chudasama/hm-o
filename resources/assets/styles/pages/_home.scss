@@ -1,9 +1,17 @@
 .left-right-img {
     height: 625px;
+
+    @include media-breakpoint-down(lg) {
+        height: 330px;
+    }
 }
 
 .view-vacancies-section {
     height: 555px;
+
+    @include media-breakpoint-down(lg) {
+        height: auto;
+    }
 
     .intersection-img {
         height: 502px;
@@ -13,6 +21,11 @@
         padding-left: 72px;
         padding-right: 85px;
         padding-block: 85px;
+
+        @include media-breakpoint-down(lg) {
+            padding-block: 75px;
+            padding-inline: 25px;
+        }
     }
 }
 
