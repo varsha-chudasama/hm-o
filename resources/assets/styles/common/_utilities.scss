@@ -213,3 +213,165 @@
 .opacity60 {
   opacity: $opacity60;
 }
+
+@include media-breakpoint-down(lg) {
+  .res-font12 {
+    font-size: $font12;
+  }
+
+  .res-font14 {
+    font-size: $font14;
+  }
+
+  .res-font16 {
+    font-size: $font16;
+  }
+
+  .res-font17 {
+    font-size: $font17;
+  }
+
+  .res-font18 {
+    font-size: $font18;
+  }
+
+  .res-font20 {
+    font-size: $font20;
+  }
+
+  .res-font30 {
+    font-size: $font30;
+  }
+
+  .res-font36 {
+    font-size: $font36;
+  }
+
+  .res-font38 {
+    font-size: $font38;
+  }
+
+  .res-font40 {
+    font-size: $font40;
+  }
+
+  .res-font42 {
+    font-size: $font42;
+  }
+
+  .res-font46 {
+    font-size: $font46;
+  }
+
+  .res-font48 {
+    font-size: $font48;
+  }
+
+  .res-font50 {
+    font-size: $font50;
+  }
+
+  .res-font52 {
+    font-size: $font52;
+  }
+
+  .res-font61 {
+    font-size: $font61;
+  }
+
+  .res-font72 {
+    font-size: $font72;
+  }
+
+  .res-font100 {
+    font-size: $font100;
+  }
+
+  .res-font15 {
+    font-size: $res-font15;
+  }
+
+  .res-font24 {
+    font-size: $res-font24;
+  }
+
+  .res-font26 {
+    font-size: $res-font26;
+  }
+
+  .res-font28 {
+    font-size: $res-font28;
+  }
+
+  .res-font34 {
+    font-size: $res-font34;
+  }
+
+  .res-leading16 {
+    line-height: $leading16;
+  }
+
+  .res-leading18 {
+    line-height: $leading18;
+  }
+
+  .res-leading20 {
+    line-height: $leading20;
+  }
+
+  .res-leading26 {
+    line-height: $leading26;
+  }
+
+  .res-leading28 {
+    line-height: $leading28;
+  }
+
+  .res-leading35 {
+    line-height: $leading35;
+  }
+
+  .res-leading40 {
+    line-height: $leading40;
+  }
+
+  .res-leading46 {
+    line-height: $leading46;
+  }
+
+  .res-leading50 {
+    line-height: $leading50;
+  }
+
+  .res-leading55 {
+    line-height: $leading55;
+  }
+
+  .res-leading60 {
+    line-height: $leading60;
+  }
+
+  .res-leading70 {
+    line-height: $leading70;
+  }
+
+  .res-leading115 {
+    line-height: $leading115;
+  }
+
+  .res-leading22 {
+    line-height: $res-leading22;
+  }
+
+  .res-leading38 {
+    line-height: $res-leading38;
+  }
+
+  .res-leading44 {
+    line-height: $res-leading44;
+  }
+
+  .res-leading48 {
+    line-height: $res-leading48;
+  }
+}
